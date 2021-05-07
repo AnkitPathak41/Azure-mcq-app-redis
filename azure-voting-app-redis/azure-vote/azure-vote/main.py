@@ -111,14 +111,10 @@ def index():
         vote2 = r.get(button2).decode('utf-8')
         vote3 = r.get(button3).decode('utf-8')
         vote4 = r.get(button4).decode('utf-8')
-        vote5 = r.get(button5).decode('utf-8')
-        vote6 = r.get(button6).decode('utf-8')
-        vote7 = r.get(button7).decode('utf-8')
-        vote8 = r.get(button8).decode('utf-8')
+    
 
         # Return index with values
         return render_template("index.html", value1=int(vote1), value2=int(vote2), value3=int(vote3), value4=int(vote4),
-                                   value5=int(vote5), value6=int(vote6), value7=int(vote7), value8=int(vote8),
                                    button1=button1, button2=button2, button3=button3, button4=button4, title=title)
 
 
